@@ -1,0 +1,353 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+
+/* --------------------------
+    Utilities Styles Starts 
+------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+}
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+/* --------------------------
+    Utilities Styles Ends 
+------------------------------ */
+
+/* Navbar Section Styles Starts */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-logo h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.menu nav ul li {
+  display: inline-block;
+  margin-left: 34px;
+  list-style: none;
+}
+.menu nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.hero-banner {
+  display: flex;
+  align-items: center;
+  margin: 100px 0;
+  justify-content: space-between;
+}
+.banner-info h1 {
+  font-size: 52px;
+  font-weight: 700;
+}
+.banner-info p {
+  font-weight: 600;
+  margin: 20px 0;
+}
+button {
+  width: 14em;
+  height: 3em;
+  border-radius: 12px;
+  font-size: 15px;
+  font-family: inherit;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+button::before {
+  content: "";
+  width: 0;
+  height: 3em;
+  border-radius: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+button:hover::before {
+  width: 14em;
+}
+
+button a {
+  text-decoration: none;
+  color: #e02c6d;
+  font-size: 18px;
+}
+.fa-arrow-right-long {
+  color: #e02c6d;
+}
+.banner-image {
+  background-image: url(../images/Circle\ design.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner-image img {
+  width: 440px;
+  height: 414px;
+}
+/* Navbar Section Styles Ends */
+
+/* Logo Section Styles Stars */
+.logos {
+  margin: 100px 0px;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f2f2f3;
+  border-radius: 12px;
+  box-shadow: 5px 5px 10px #a9a9aa77, inset -5px -5px 10px #ffffff7e;
+  padding: 40px;
+}
+
+/* Logo Section Styles Ends */
+/* Popular-collections Section Styles Starts */
+
+.popular-collections {
+  margin: 100px 0;
+}
+.collections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+  justify-items: center;
+}
+.section-title h1 {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+}
+.collection {
+  border-radius: 12px;
+  width: 330px;
+  height: 476px;
+  box-shadow: 5px 5px 10px #a9a9aa77, inset -5px -5px 10px #ffffff7e;
+  padding: 20px;
+  background: #f2f2f3;
+}
+.collection img {
+  width: 100%;
+}
+.collection-name {
+  font-size: 28px;
+  font-weight: 500;
+}
+.collection-price {
+  font-size: 24px;
+}
+.rating {
+  display: flex;
+
+  align-items: center;
+}
+
+.rating span {
+  margin-left: 27px;
+  font-size: 14px;
+  color: #787885;
+}
+.fa-star,
+.fa-star-half-stroke {
+  color: #fb8200;
+  font-size: 14px;
+}
+.collection p {
+  font-size: 14px;
+  color: #787885;
+  line-height: 1.7;
+}
+.normal-btn {
+  text-align: end;
+  margin-top: 30px;
+}
+.normal-btn a {
+  text-decoration: none;
+  color: #e02c6d;
+}
+/* Popular-collections Section Styles Ends */
+
+/* Featured Products Section Styles Starts */
+.featured {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.featured-info h1 {
+  font-size: 38px;
+}
+.featured-info p {
+  margin: 30px 0;
+  letter-spacing: 1px;
+  list-style: 1.7;
+}
+/* Featured Products Section Styles Ends */
+/* Footer Section Styles Ends */
+footer {
+  width: 100%;
+  height: 240px;
+  margin-top: 100px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-info {
+  text-align: center;
+}
+.footer-info h1 {
+  font-size: 24px;
+}
+.footer-info p {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.7;
+  margin: 10px 0;
+}
+
+.fa-brands {
+  padding: 10px;
+}
+/* Footer Section Styles Ends */
+
+/* --------------------------
+    Media Queries Styles Starts 
+------------------------------ */
+
+/* Mobile device */
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .navbar {
+    justify-content: center;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hero-banner {
+    flex-direction: column-reverse;
+    margin: 50px 0;
+  }
+
+  .banner-info {
+    text-align: center;
+  }
+  .banner-info h1 {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .banner-info p {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+  .banner-image img {
+    width: 257px;
+    height: 257px;
+  }
+
+  button {
+    width: 12em;
+    height: 3em;
+  }
+
+  button:hover::before {
+    width: 12em;
+  }
+
+  button a {
+    font-size: 16px;
+  }
+  .logos {
+    margin: 0 10px;
+  }
+  .logo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+  .logo img {
+    width: 60px;
+    height: 25px;
+  }
+  .popular-collections {
+    margin: 50px 0;
+  }
+  .collections {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .normal-btn {
+    margin: 30px 10px;
+  }
+  .featured {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .featured-info h1 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .featured-image {
+    margin: 50px 0;
+  }
+  .featured-image img {
+    width: 299px;
+    height: 188px;
+  }
+  footer {
+    margin-top: 40px;
+  }
+}
+
+/* Tablet device */
+@media only screen and (min-width: 687px) and (max-width: 991px) {
+  .container {
+    width: 100%;
+  }
+  .navbar {
+    margin: 0 20px;
+  }
+  .menu nav ul .text-menu {
+    display: none;
+  }
+  .hero-banner {
+    margin: 50px 20px;
+  }
+  .banner-info h1 {
+    font-size: 30px;
+  }
+  .banner-image img {
+    width: 300px;
+    height: 300px;
+  }
+  main {
+    display: none;
+  }
+}
+/* --------------------------
+    Media Queries Styles Ends 
+------------------------------ */
