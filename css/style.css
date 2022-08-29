@@ -193,6 +193,10 @@ button a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 5px 5px 10px #a9a9aa77, inset -5px -5px 10px #ffffff7e;
+  background: #f2f2f3;
+  border-radius: 12px;
+  padding: 20px;
 }
 .featured-info h1 {
   font-size: 38px;
@@ -344,8 +348,34 @@ footer {
     width: 300px;
     height: 300px;
   }
-  main {
+  .logos {
+    margin: 50px 20px;
+  }
+
+  .popular-collections {
+    margin: 50px 0;
+  }
+  .collections {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .normal-btn {
     display: none;
+  }
+  .featured {
+    margin: 0 20px;
+    box-shadow: 5px 5px 10px #a9a9aa77, inset -5px -5px 10px #ffffff7e;
+    background: #f2f2f3;
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .featured-image img {
+    width: 80%;
+  }
+  .featured-info h1 {
+    font-size: 20px;
+  }
+  .featured-info p {
+    font-size: 14px;
   }
 }
 /* --------------------------
